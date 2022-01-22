@@ -9,6 +9,8 @@ that takes four arguments:
 4. a flag indicating whether the process should be deterministic [bool]
 and returns an extended sentence until the first ., ?, or ! is found OR until it has 15 total
 tokens.
+
+
 If the input flag deterministic is true, choose at each step the single most probable next
 token. When two tokens are equally probable, choose the one that occurs first in the corpus.
 If deterministic is false, draw the next word randomly from the appropriate distribution.
